@@ -3,38 +3,53 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Meine erste Webseite</title>
+    <title>Amazonia – Hochqualitative Hardware</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <button id="themeBtn" class="theme-toggle" type="button">Dunkelmodus</button>
+
     <header class="container">
-      <h1>Hallo Web!</h1>
-      <p>Das ist meine erste Webseite im Internet.</p>
-      <button id="themeBtn" type="button">Dark Mode umschalten</button>
+      <nav class="nav">
+        <a class="brand" href="index.html">Amazonia</a>
+        <div class="links">
+          <a class="active" href="index.html">Start</a>
+          <a href="products.html">Produkte</a>
+          <a href="account.html">Mein Account</a>
+        </div>
+      </nav>
+
+      <h1>Amazonia</h1>
+      <p>
+        Amazonia ist eine fiktive Technologie-Firma, die sich auf hochqualitative Hardware
+        spezialisiert hat. Unser Fokus liegt auf langlebigen Materialien, präziser Verarbeitung
+        und einer durchdachten Nutzererfahrung – von der ersten Berührung bis zum täglichen Einsatz.
+      </p>
     </header>
 
     <main class="container">
       <section class="card">
-        <h2>Was ist das hier?</h2>
+        <h2>Wofür wir stehen</h2>
         <p>
-          Diese Seite besteht aus HTML (Struktur), CSS (Design) und JavaScript
-          (Interaktion).
+          Wir entwickeln Premium-Geräte für Menschen, die Wert auf Performance, Zuverlässigkeit und
+          ein sauberes Design legen. Jedes Produkt wird so konzipiert, dass es schnell, stabil und
+          leicht zu bedienen ist – ohne unnötigen Ballast.
         </p>
       </section>
 
       <section class="card">
-        <h2>Mini-Liste</h2>
+        <h2>Unsere Spezialisierung</h2>
         <ul>
-          <li>HTML: Überschriften, Absätze, Listen</li>
-          <li>CSS: Farben, Abstände, Layout</li>
-          <li>JS: Klick-Button, Dark Mode</li>
+          <li>Hochwertige Verarbeitung (Metall/Glas, präzise Passformen)</li>
+          <li>Optimierte Leistung für Alltag und Arbeit</li>
+          <li>Langfristige Nutzung: robuste Komponenten & effiziente Systeme</li>
         </ul>
       </section>
     </main>
 
     <footer class="container footer">
-      <small>© <span id="year"></span> Ich</small>
+      <small>© <span id="year"></span> Amazonia</small>
     </footer>
 
     <script src="script.js"></script>

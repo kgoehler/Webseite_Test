@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazonia – Mein Account</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <button id="themeBtn" class="theme-toggle" type="button">Dunkelmodus</button>
+
+    <header class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">Amazonia</a>
+        <div class="links">
+          <a href="index.html">Start</a>
+          <a href="products.html">Produkte</a>
+          <a class="active" href="account.html">Mein Account</a>
+        </div>
+      </nav>
+
+      <h1>Mein Account</h1>
+
+      <div class="profile-wrap">
+        <img class="profile-img" src="images/profilbild_test.jpag.jpeg" alt="Profilbild" />
+        <div>
+          <p style="margin: 0; font-weight: 700;">Profil</p>
+          <p style="margin: 6px 0 0 0; opacity: 0.85;">
+            Trage deine Daten ein (nur Demo – es wird noch nichts gespeichert).
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Account-Daten</h2>
+
+        <form class="form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Max Mustermann" />
+          </label>
+
+          <label>
+            Adresse
+            <textarea name="address" placeholder="Straße, Hausnummer, PLZ, Ort"></textarea>
+          </label>
+
+          <label>
+            E-Mail
+            <input type="email" name="email" placeholder="max@example.com" />
+          </label>
+
+          <button type="button">Speichern (Demo)</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <small>© <span id="year"></span> Amazonia</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
