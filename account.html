@@ -23,12 +23,28 @@
       <h1>Mein Account</h1>
 
       <div class="profile-wrap">
-        <img class="profile-img" src="images/profilbild_test.jpag.jpeg" alt="Profilbild" />
+        <img
+          id="profilePreview"
+          class="profile-img"
+          src=""
+          alt="Kein Profilbild ausgewählt"
+          hidden
+        />
+
+        <div class="profile-placeholder" id="profilePlaceholder">
+          Kein Profilbild
+        </div>
+
         <div>
           <p style="margin: 0; font-weight: 700;">Profil</p>
-          <p style="margin: 6px 0 0 0; opacity: 0.85;">
-            Trage deine Daten ein (nur Demo – es wird noch nichts gespeichert).
+          <p style="margin: 6px 0 8px 0; opacity: 0.85;">
+            Trage deine Daten ein (Demo). Profilbild ist optional.
           </p>
+
+          <label class="file-label">
+            Profilbild auswählen
+            <input id="profileImageInput" type="file" accept="image/*" />
+          </label>
         </div>
       </div>
     </header>
@@ -37,23 +53,26 @@
       <section class="card">
         <h2>Account-Daten</h2>
 
-        <form class="form">
+        <!-- Meldungsfeld (wird per JS befüllt) -->
+        <div id="formMessage" class="message" hidden></div>
+
+        <form id="accountForm" class="form" novalidate>
           <label>
             Name
-            <input type="text" name="name" placeholder="Max Mustermann" />
+            <input id="nameInput" type="text" name="name" placeholder="Max Mustermann" />
           </label>
 
           <label>
             Adresse
-            <textarea name="address" placeholder="Straße, Hausnummer, PLZ, Ort"></textarea>
+            <textarea id="addressInput" name="address" placeholder="Straße, Hausnummer, PLZ, Ort"></textarea>
           </label>
 
           <label>
             E-Mail
-            <input type="email" name="email" placeholder="max@example.com" />
+            <input id="emailInput" type="text" name="email" placeholder="max@example.com" />
           </label>
 
-          <button type="button">Speichern (Demo)</button>
+          <button id="saveBtn" type="submit">Speichern</button>
         </form>
       </section>
     </main>
